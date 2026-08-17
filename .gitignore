@@ -1,0 +1,11 @@
+# Ignore user image uploads
+uploads/cover/*
+uploads/galerie/*
+!uploads/cover/.gitkeep
+!uploads/galerie/.gitkeep
+
+# Ignore OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
