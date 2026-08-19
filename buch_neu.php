@@ -82,7 +82,7 @@ $werte = [
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate CSRF token
     if (!hash_equals($_SESSION['csrf'] ?? '', $_POST['csrf_token'] ?? '')) {
-        http_response_code(403);
+        http_response_code(403); //header('Location: buch.php');
         exit('Ungültige Anfrage.');
     }
 
